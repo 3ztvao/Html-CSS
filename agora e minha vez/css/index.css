@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     font-family: 'MedievalSharp'; 
     background-color: black;
     color:rgb(255, 243, 240);
     font-size: 30px;
+    margin: 0px;
 }
 ul{
     display: flex;
@@ -22,24 +28,25 @@ a{
     text-decoration:none;
 }
 #face{
-    display: flex;
+    
+    position: absolute;
     align-items: center;
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    border: 2px solid brown;
     justify-content: center;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    border: 1px solid brown;
     
     }
-#fundo{
-    display: flex;
+/* #fundo{
+    display:flex;
+    align-items: center;
+    justify-content: center;
     width: 2350px;
     height: 535px;
-    justify-content: center;
-    align-items: center;
-
-}
+} */
 .center{
     text-align: center;
+    background-image: url('../img/fundodothales.jpg');
 }
 
