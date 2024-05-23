@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taverna</title>
+    <link rel="stylesheet" href="/agora e minha vez/css/index.css">
+</head>
+<body>
+    
+    <nav>
+        <main class="contariner">
+            <figure>
+                <div class="center">    
+                    <img src="/agora e minha vez/img/fundo" id="fundo">
+                    <img src="/agora e minha vez/img/balaur.png" id="face">
+                </div>
+            </figure>    
+        </main><br><br><br><br><br><br><BR><br><br><br><br><br><br></BR>
+        <ul>
+            <li>
+                <a href="/agora e minha vez/html/aventuras.html">Aventuras</a>
+            </li>
+            <li>
+                <a href="/agora e minha vez/html/inicio.html">Inicio</a>
+            </li>
+            <li>
+                <a href="/agora e minha vez/html/Ajuda.html">Ajuda</a>
+            </li>
+        </ul>
+    </nav>
+    <section id="conteudo"></section>
+    <script>
+        document.querySelectorAll('a').forEach(link=>{
+            link.onclick=function(e){
+                e.preventDefault()
+                const conteudo = document.getElementById('conteudo')
+                fetch(link.href)
+                    .then(resp => resp.text())
+                    .then(html => conteudo.innerHTML = html)
+            }
+        })
+    </script>
+</body>
+</html>
