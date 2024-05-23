@@ -22,18 +22,19 @@ a{
     text-decoration:none;
 }
 #face{
+    display: flex;
+    align-items: center;
     width: 350px;
     height: 350px;
     border-radius: 50%;
     border: 2px solid brown;
-    display: flex;
     justify-content: center;
-    align-items: center;
+    
     }
 #fundo{
+    display: flex;
     width: 2350px;
     height: 535px;
-    display: flex;
     justify-content: center;
     align-items: center;
 
