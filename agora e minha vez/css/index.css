@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 body{
+    font-family: 'MedievalSharp'; 
     background-color: black;
     color:rgb(255, 243, 240);
     font-size: 30px;
